@@ -71,5 +71,6 @@ def EVA(smb,n):
     
     #Export
     number=[gm,tvalue,asd,sharpe,skew,kurt,VaR,dvola,sortino,maxdraw,ddlength,CER]
-    A_EVA=pd.DataFrame({'Stats':name, title:number})
-    print(A_EVA)
+    output=pd.DataFrame({'Stats':name, title:number})
+    print(output)
+    return(output)
